@@ -1,7 +1,11 @@
 
-# @devlander/ui
+![devlander-ui-png](https://github.com/user-attachments/assets/2aa14b79-bcec-494b-bef0-0cbcfb01a3ad)
+
+# @devlander/ui (Beta)
 
 **`@devlander/ui`** is a comprehensive UI package that provides reliable, customizable, and cross-platform components. Designed to streamline development, it helps you kickstart projects with consistent and reusable elements that work seamlessly across iOS, Android, React Native Web, React Native TV, Next.js, Xbox, and more.
+
+🚨 **Beta Notice**: This package is currently in beta. While it's stable and functional for most use cases, certain features may still be evolving. Feedback and contributions are greatly appreciated to help improve the package.
 
 ---
 
@@ -51,58 +55,6 @@ yarn add @devlander/ui
 - `Breadcrumbs`, `Stepper`
 
 All components are highly customizable to suit your specific needs.
-
----
-
-## 🎨 Theming
-
-**`@devlander/ui`** includes pre-configured themes:
-- **Default Theme**: A clean, modern style.
-- **Dark Theme**: Optimized for low-light environments.
-
-Themes can be extended or replaced. Example:
-
-```tsx
-import { ThemeProvider, createTheme } from '@devlander/ui';
-
-const customTheme = createTheme({
-  palette: {
-    primary: '#007BFF',
-    secondary: '#6C757D',
-  },
-});
-
-const App = () => (
-  <ThemeProvider theme={customTheme}>
-    <YourComponent />
-  </ThemeProvider>
-);
-```
-
----
-
-## 🛠️ Usage
-
-Here’s how to get started with **`@devlander/ui`**:
-
-### Example: Button and Input Components
-```tsx
-import React from 'react';
-import { Button, Input } from '@devlander/ui';
-
-const App = () => (
-  <div>
-    <Input
-      placeholder="Enter your password"
-      type="password"
-      onChange={(e) => console.log(e.target.value)}
-    />
-    <Button onClick={() => alert('Button clicked!')}>Submit</Button>
-  </div>
-);
-
-export default App;
-```
 
 ---
 
